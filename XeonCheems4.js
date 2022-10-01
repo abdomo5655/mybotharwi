@@ -1094,22 +1094,22 @@ const reactionMessage = {
                 const timestampe = speed();
 const latensie = speed() - timestampe
                 const menulist = `┌─❖
-│「 SLM 👋 」
+│「 𝐒𝐋𝐌 👋 」
 └┬❖ 「 ${pushname} 」
-┌┤✑  WACH HH? 😄
+┌┤✑  𝐖𝐀𝐂𝐇 𝐂𝐕 ? 😄
 │└────────────┈ ⳹
 │
 └─「 WARK W3AWD LKARK 」       
-│𝗦𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} miliseconds
-│𝗥𝘂𝗻𝘁𝗶𝗺𝗲 : ${runtime(process.uptime())}
-│𝗕𝗼𝘁 𝗡𝗮𝗺𝗲 : ${global.botname}
-│𝗢𝘄𝗻𝗲𝗿 𝗡𝗮𝗺𝗲 : ${global.ownername}
-│𝗢𝘄𝗻𝗲𝗿 𝗡𝗼. : ${global.owner}
-│𝗛𝗼𝘀𝘁 𝗡𝗮𝗺𝗲 : ${os.hostname()}
-│𝗣𝗹𝗮𝘁𝗳𝗼𝗿𝗺 : ${os.platform()}
-│𝗧𝗼𝘁𝗮𝗹 𝗨𝘀𝗲𝗿 : ${Object.keys(global.db.data.users).length}
-│𝗧𝗼𝘁𝗮𝗹 𝗛𝗶𝘁 : ${jumlahcmd}
-│𝗧𝗼𝘁𝗮𝗹 𝗛𝗶𝘁 𝗧𝗼𝗱𝗮𝘆 : ${jumlahharian}
+│𝗦𝗽𝗲𝗲𝗱 ✅ : ${latensie.toFixed(4)} miliseconds
+│𝗥𝘂𝗻𝘁𝗶𝗺𝗲 ✅ : ${runtime(process.uptime())}
+│𝗕𝗼𝘁 𝗡𝗮𝗺𝗲 ✅ : ${global.botname}
+│𝗢𝘄𝗻𝗲𝗿 𝗡𝗮𝗺𝗲 ✅ : ${global.ownername}
+│𝗢𝘄𝗻𝗲𝗿 𝗡𝗼.✅ : ${global.owner}
+│𝗛𝗼𝘀𝘁 𝗡𝗮𝗺𝗲 ✅ : ${os.hostname()}
+│𝗣𝗹𝗮𝘁𝗳𝗼𝗿𝗺 ✅ : ${os.platform()}
+│𝗧𝗼𝘁𝗮𝗹 𝗨𝘀𝗲𝗿 ✅ : ${Object.keys(global.db.data.users).length}
+│𝗧𝗼𝘁𝗮𝗹 𝗛𝗶𝘁 ✅ : ${jumlahcmd}
+│𝗧𝗼𝘁𝗮𝗹 𝗛𝗶𝘁 𝗧𝗼𝗱𝗮𝘆 ✅ : ${jumlahharian}
 └┬────────────┈ ⳹
    │✑  Please Select
    │✑  The Button Below
@@ -8789,17 +8789,17 @@ XeonBotInc.sendMessage(from, { react: { text: `${global.reactmoji}`, key: m.key 
                                 }
                             }, {
                                 quickReplyButton: {
-                                    displayText: 'All Menu 🇲🇦',
+                                    displayText: '𝐀𝐥𝐥 𝐌𝐞𝐧𝐮 🇲🇦',
                                     id: 'allmenu'
                                 }
                             }, {
                                 quickReplyButton: {
-                                    displayText: 'List Menu 🇲🇦',
+                                    displayText: '𝐋𝐢𝐬𝐭 𝐌𝐞𝐧𝐮 🇲🇦',
                                     id: 'command'
                                 }  
                             }, {
                                 quickReplyButton: {
-                                    displayText: 'Owner 🇲🇦',
+                                    displayText: '𝐎𝐖𝐍𝐄𝐑 🇲🇦',
                                     id: 'owner'
                                 }
                             }]
@@ -8818,9 +8818,9 @@ XeonBotInc.sendMessage(from, { react: { text: `${global.reactmoji}`, key: m.key 
                         let buttonmenu = [
         	{ urlButton: { displayText: `inc `, url : `${websitex}` } },
             { urlButton: { displayText: `sc `, url: `${botscript}` } },
-            { quickReplyButton: { displayText: `All Menu 🇲🇦`, id: 'allmenu'} },
-            { quickReplyButton: { displayText: `List Menu 🇲🇦`, id: 'command'} },
-            { quickReplyButton: { displayText: `Owner 💜`, id: 'owner'} }
+            { quickReplyButton: { displayText: `𝐀𝐋𝐋 𝐌𝐄𝐍𝐔  🇲🇦`, id: 'allmenu'} },
+            { quickReplyButton: { displayText: `𝐋𝐈𝐒𝐓  𝐌𝐄𝐍𝐔  🇲🇦`, id: 'command'} },
+            { quickReplyButton: { displayText: `𝐎𝐖𝐍𝐄𝐑 💜`, id: 'owner'} }
         	]
         	XeonBotInc.sendMessage(m.chat, { caption: menulist, document: fs.readFileSync('./XeonMedia/theme/cheems.xlsx'), mimetype: `${docs}`, fileName: `${ownername}`, templateButtons: buttonmenu, footer: `${botname}`, mentionedJid: [m.sender] })
                         }
@@ -8850,107 +8850,107 @@ let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObje
 								"title": "Bot Features ❤️",
 								"rows": [
 									{
-										"title": "All Menu 🇲🇦",
+										"title": "𝐀𝐥𝐥 𝐌𝐞𝐧𝐮 🇲🇦",
 										"description": "Displays The List Of All The Features!",
 										"rowId": `${prefix}allmenu`
 									},
 									{
-										"title": "Owner Menu 🇲🇦",
+										"title": "𝐎𝐰𝐧𝐞𝐫 𝐌𝐞𝐧𝐮 🇲🇦",
 										"description": "Displays The List Of Owner Features",
 										"rowId": `${prefix}ownermenu`
 										},
 									{
-										"title": "Group Menu 🇲🇦",
+										"title": "𝐆𝐫𝐨𝐮𝐛 𝐌𝐞𝐧𝐮 🇲🇦",
 										"description": "Displays The List Of Main Features",
 										"rowId": `${prefix}groupmenu`
 										},
 										{
-										"title": "Maker Menu 🇲🇦",
+										"title": "𝐌𝐚𝐤𝐞𝐫 𝐌𝐞𝐧𝐮 🇲🇦",
 										"description": "Displays The List Of Logo Making Features",
 										"rowId": `${prefix}indomenu`
 									},
 									{
-										"title": "Sound Menu 🇲🇦",
+										"title": "𝐒𝐨𝐮𝐧𝐝 𝐌𝐞𝐧𝐮 🇲🇦",
 										"description": "Displays The List Of Sound Features",
 										"rowId": `${prefix}soundmenu`
 									},
 									{
-										"title": "Download Menu ↘️🇲🇦",
+										"title": "𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝 𝐌𝐞𝐧𝐮 ↘️🇲🇦",
 										"description": "Displays The List Of Download Features",
 										"rowId": `${prefix}downloadmenu`
 									},
 									{
-										"title": "Sticker Menu 🇲🇦",
+										"title": "𝐒𝐭𝐢𝐜𝐤𝐞𝐫 𝐌𝐞𝐧𝐮 🇲🇦",
 										"description": "Displays The List Of Sticker Features",
 										"rowId": `${prefix}indomenu`
 									},
 									{
-										"title": "Search Menu 🇲🇦",
+										"title": "𝐒𝐞𝐚𝐫𝐜𝐡 𝐌𝐞𝐧𝐮 🇲🇦",
 										"description": "Displays The List Of Searching Features",
 										"rowId": `${prefix}searchmenu`
 									},
 									{
-										"title": "Tool Menu ⚙️",
+										"title": "𝐓𝐨𝐨𝐥 𝐌𝐞𝐧𝐮 ⚙️",
 										"description": "Displays The List Of Tool Features",
 										"rowId": `${prefix}toolmenu`
 									},
 									{
-										"title": "Random Image Menu 🌆",
+										"title": "𝐑𝐚𝐧𝐝𝐨𝐦 𝐈𝐦𝐚𝐠𝐞 𝐌𝐞𝐧𝐮 🌆",
 										"description": "Displays The List Of Random Image Features",
 										"rowId": `${prefix}randomimagemenu`
 									},
 									{
-										"title": "Image Effect Menu 🖼️",
+										"title": "𝐈𝐦𝐚𝐠𝐞 𝐄𝐟𝐟𝐞𝐜𝐭 𝐌𝐞𝐧𝐮 🖼️",
 										"description": "Displays The List Of Image Effect Features",
 										"rowId": `${prefix}imageeffectmenu`
 									},
 										{
-											"title": "Anime Menu 💜",
+											"title": "𝐀𝐧𝐢𝐦𝐞 𝐌𝐞𝐧𝐮 💜",
 										"description": "Displays The List Of Random Anime Features",
 										"rowId": `${prefix}animemenu`
 										},
 										{
-											"title": "Emote Menu 💙",
+											"title": "𝐄𝐦𝐨𝐭𝐞 𝐌𝐞𝐧𝐮 💙",
 										"description": "Displays The List Of Emote Features",
 										"rowId": `${prefix}emotemenu`
 										},
 										{
-										"title": "Anime Sticker Menu 🇲🇦",
+										"title": "𝐀𝐧𝐢𝐦𝐞 𝐒𝐭𝐢𝐜𝐤𝐞𝐫 𝐌𝐞𝐧𝐮 🇲🇦",
 										"description": "Displays The List Of Anime Sticker Features",
 										"rowId": `${prefix}animestickermenu`
 									     },
 									{
-										"title": "Nsfw Menu 💛",
+										"title": "𝐍𝐬𝐟𝐰 𝐌𝐞𝐧𝐮 💛",
 										"description": "Displays The List Of Nsfe Features",
 										"rowId": `${prefix}nsfwmenu`
 									     },
 										{
-											"title": "Fun Menu 🕺",
+											"title": "𝐅𝐮𝐧 𝐌𝐞𝐧𝐮 🕺",
 										"description": "Displays The List Of Fun Features",
 										"rowId": `${prefix}funmenu`
 										},
 										{
-										"title": "Game Menu 🎮",
+										"title": "𝐆𝐚𝐦𝐞 𝐌𝐞𝐧𝐮 🎮",
 										"description": "Displays The List Of Game Features",
 										"rowId": `${prefix}indomenu`
 									},
 										{
-											"title": "Convert Menu ⚒️",
+											"title": "𝐂𝐨𝐧𝐯𝐞𝐫𝐭 𝐌𝐞𝐧𝐮 ⚒️",
 										"description": "Displays The List Of Convert Features",
 										"rowId": `${prefix}convertmenu`
 										},
 										{
-											"title": "Database Menu ♻️",
+											"title": "𝐃𝐚𝐭𝐚𝐛𝐚𝐬𝐞 𝐌𝐞𝐧𝐮 ♻️",
 										"description": "Displays The List Of Database Features",
 										"rowId": `${prefix}databasemenu`
 										},
 										{
-										"title": "Indo Menu  🦜",
+										"title": "𝐈𝐧𝐝𝐨 𝐌𝐞𝐧𝐮  🦜",
 										"description": "Displays The List Of Indo Features",
 										"rowId": `${prefix}indomenu`
 									},
 										{
-											"title": "Horoscope Menu 🕊️",
+											"title": "𝐇𝐨𝐫𝐨𝐬𝐜𝐨𝐩𝐞 𝐌𝐞𝐧𝐮 🕊️",
 										"description": "Displays The List Of Horoscope Features",
 										"rowId": `${prefix}indohoroscopemenu`
 										}
@@ -8960,7 +8960,7 @@ let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObje
 								"title": "Chat With Fellow Users 🌝",
 								"rows": [
 									{
-										"title": "Anonymous Chat Menu 🙎🏻‍♂️",
+										"title": "𝐀𝐧𝐨𝐧𝐲𝐦𝐨𝐮𝐬 𝐂𝐡𝐚𝐭 𝐌𝐞𝐧𝐮 🙎🏻‍♂️",
 										"description": "Displays The List Of Anonymous Chat Features",
 										"rowId": `${prefix}anonymousmenu`
 									}
@@ -8970,7 +8970,7 @@ let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObje
 								"title": "Credit ©️",
 								"rows": [
 									{
-										"title": "Thanks To ❤️",
+										"title": "Thanks To HARWI BOT ❤️",
 										"description": "Displays The List Of Credit Of The Bot !!",
 										"rowId": `${prefix}tqtt`
 									}
@@ -8987,7 +8987,7 @@ case 'allmenu':
 	   if (isBan) return reply(mess.ban)
 	if (isBanChat) return reply(mess.banChat)
 var unicorn = await getBuffer(picak+'All Menu')
-await XeonBotInc.send5ButImg(from, `╔═══════✪「 𝐎𝐖𝐍𝐄𝐑 」	
+await XeonBotInc.send5ButImg(from, `╔═══════✪「 💳 •𝐎𝐖𝐍𝐄𝐑 𝐇𝐀𝐑𝐖𝐈• 💳 」	
 ╠ ${prefix}self
 ╠ ${prefix}public
 ╠ ${prefix}antitag
@@ -9009,7 +9009,7 @@ await XeonBotInc.send5ButImg(from, `╔═══════✪「 𝐎𝐖𝐍�
 ╠ ${prefix}block 
 ╠ ${prefix}unblock 
 ╠ ${prefix}coowner 
-╠═══════✪「 𝐆𝐑𝐎𝐔𝐁 」	        
+╠═══════✪「 𝐆𝐑𝐎𝐔𝐁 💳 」	        
 ╠${prefix}grousetting
 ╠${prefix}grouplink
 ╠${prefix}ephemeral 
@@ -9045,7 +9045,7 @@ await XeonBotInc.send5ButImg(from, `╔═══════✪「 𝐎𝐖𝐍�
 ╠${prefix}upvote
 ╠${prefix}checkvote
 ╠${prefix}delvote
-╠═══════✪「 𝐌𝐀𝐊𝐄𝐑 」
+╠═══════✪「 𝐌𝐀𝐊𝐄𝐑 💳 」
 ╠${prefix}candy
 ╠${prefix}blackpinkneon
 ╠${prefix}deepsea
@@ -9149,7 +9149,7 @@ await XeonBotInc.send5ButImg(from, `╔═══════✪「 𝐎𝐖𝐍�
 ╠ ${prefix}halloween
 ╠ ${prefix}watercolor
 ╠ ${prefix}classic
-╠═════✪「 DOWNLOAD 」	
+╠═════✪「 𝐃𝐎𝐖𝐋𝐍𝐋𝐎𝐀𝐃 💳 」	
 ╠${prefix}instagram
 ╠${prefix}igtv 
 ╠${prefix}igstory 
@@ -9168,7 +9168,7 @@ await XeonBotInc.send5ButImg(from, `╔═══════✪「 𝐎𝐖𝐍�
 ╠${prefix}gitclone 
 ╠${prefix}soundcloud 
 ╠${prefix}zippyshare 
-╠═══════✪「 𝐒𝐄𝐀𝐑𝐂𝐇 」	
+╠═══════✪「 𝐒𝐄𝐀𝐑𝐂𝐇 💳 」	
 ╠${prefix}play 
 ╠${prefix}song 
 ╠${prefix}yts 
@@ -9195,7 +9195,7 @@ await XeonBotInc.send5ButImg(from, `╔═══════✪「 𝐎𝐖𝐍�
 ╠${prefix}wattpad 
 ╠ ${prefix}mcserver [ip|port]
 ╠ ${prefix}drakor 
-╠═══════✪「 𝐂𝐎𝐍𝐕𝐄𝐑𝐓 」
+╠═══════✪「 𝐂𝐎𝐍𝐕𝐄𝐑𝐓 💳 」
 ╠ ${prefix}toimage 
 ╠ ${prefix}sticker 
 ╠ ${prefix}take 
@@ -9224,7 +9224,7 @@ await XeonBotInc.send5ButImg(from, `╔═══════✪「 𝐎𝐖𝐍�
 ╠${prefix}robot 
 ╠${prefix}slow 
 ╠${prefix}squirrel 
-╠═══════✪「 𝐈𝐌𝐆 𝐄𝐅𝐅𝐄𝐂𝐓 」
+╠═══════✪「 𝐈𝐌𝐆 𝐄𝐅𝐅𝐄𝐂𝐓 💳 」
 ╠${prefix}wanted
 ╠${prefix}blur
 ╠${prefix}framed
@@ -9239,7 +9239,7 @@ await XeonBotInc.send5ButImg(from, `╔═══════✪「 𝐎𝐖𝐍�
 ╠${prefix}beautifuleffect
 ╠${prefix}deleteeffect
 ╠${prefix}pixelate
-╠═══════✪「 𝐑𝐀𝐍𝐃𝐎𝐌 𝐈𝐌𝐆 」
+╠═══════✪「 𝐑𝐀𝐍𝐃𝐎𝐌 𝐈𝐌𝐆 💳 」
 ╠${prefix}coffee
 ╠${prefix}bts
 ╠${prefix}woof
@@ -9252,7 +9252,7 @@ await XeonBotInc.send5ButImg(from, `╔═══════✪「 𝐎𝐖𝐍�
 ╠${prefix}wallcode
 ╠${prefix}animewall [query]
 ╠${prefix}animewall2 [query]
-╠═══════✪「 𝐄𝐌𝐎𝐓𝐄 」
+╠═══════✪「 𝐄𝐌𝐎𝐓𝐄 💳 」
 ╠${prefix}instagramemoji
 ╠${prefix}facebookemoji
 ╠${prefix}iphoneemoji
@@ -9265,7 +9265,7 @@ await XeonBotInc.send5ButImg(from, `╔═══════✪「 𝐎𝐖𝐍�
 ╠${prefix}googleemoji
 ╠${prefix}pediaemoji
 ╠${prefix}microsoftemoji
-╠═══════✪「 𝐀𝐍𝐈𝐌𝐄 」
+╠═══════✪「 𝐀𝐍𝐈𝐌𝐄 💳 」
 ╠${prefix}naruto
 ╠${prefix}yaoi
 ╠${prefix}neko2
@@ -9314,7 +9314,7 @@ await XeonBotInc.send5ButImg(from, `╔═══════✪「 𝐎𝐖𝐍�
 ╠${prefix}animemegumin
 ╠${prefix}smug2
 ╠${prefix}couplepp
-╠══════✪「 𝐒𝐓𝐈𝐂𝐊𝐄𝐑 」
+╠══════✪「 𝐒𝐓𝐈𝐂𝐊𝐄𝐑 💳 」
 ╠ ${prefix}patrick
 ╠ ${prefix}emoji
 ╠ ${prefix}emojimix
@@ -9322,7 +9322,7 @@ await XeonBotInc.send5ButImg(from, `╔═══════✪「 𝐎𝐖𝐍�
 ╠ ${prefix}ttp
 ╠ ${prefix}doge
 ╠ ${prefix}lovesticker
-╠════✪「 𝐀𝐍𝐈𝐌𝐄 𝐒𝐓𝐈𝐂𝐊𝐄𝐑 」
+╠════✪「 𝐀𝐍𝐈𝐌𝐄 𝐒𝐓𝐈𝐂𝐊𝐄𝐑 💳 」
 ╠${prefix}loli
 ╠${prefix}bully
 ╠${prefix}cuddle
@@ -9352,7 +9352,7 @@ await XeonBotInc.send5ButImg(from, `╔═══════✪「 𝐎𝐖𝐍�
 ╠${prefix}cringe
 ╠${prefix}neko
 ╠${prefix}gura
-╠═══════✪「 𝐍𝐒𝐅 」
+╠═══════✪「 𝐍𝐒𝐅 💳 」
 ╠${prefix}hentaivideo
 ╠${prefix}yuri
 ╠${prefix}masturbation
@@ -9378,7 +9378,7 @@ await XeonBotInc.send5ButImg(from, `╔═══════✪「 𝐎𝐖𝐍�
 ╠${prefix}spank
 ╠${prefix}hneko
 ╠${prefix}nwaifu
-╠═══════✪「 𝐅𝐔𝐍 」
+╠═══════✪「 𝐅𝐔𝐍 💳 」
 ╠ ${prefix}how 
 ╠ ${prefix}when 
 ╠ ${prefix}where 
@@ -9443,7 +9443,7 @@ await XeonBotInc.send5ButImg(from, `╔═══════✪「 𝐎𝐖𝐍�
 ╠ ${prefix}playboy
 ╠ ${prefix}fuckgirl
 ╠ ${prefix}playgirl
-╠══════✪「 𝐒𝐎𝐔𝐍𝐃 」
+╠══════✪「 𝐒𝐎𝐔𝐍𝐃 💳 」
 ╠ ${prefix}sound1
 ╠ ${prefix}sound2
 ╠ ${prefix}sound3
@@ -9605,7 +9605,7 @@ await XeonBotInc.send5ButImg(from, `╔═══════✪「 𝐎𝐖𝐍�
 ╠ ${prefix}sound159
 ╠ ${prefix}sound160
 ╠ ${prefix}sound161
-╠══════✪「 𝐆𝐀𝐌𝐄 」
+╠══════✪「 𝐆𝐀𝐌𝐄 💳 」
 ╠ ${prefix}truth
 ╠ ${prefix}dare
 ╠ ${prefix}tictactoe
@@ -9613,16 +9613,16 @@ await XeonBotInc.send5ButImg(from, `╔═══════✪「 𝐎𝐖𝐍�
 ╠ ${prefix}guess [option]
 ╠ ${prefix}math [mode]
 ╠ ${prefix}suitpvp [tag]
-╠══✪「 𝐀𝐍𝐎𝐍𝐘𝐌𝐎𝐔𝐒 𝐂𝐇𝐀𝐓 」
+╠══✪「 𝐀𝐍𝐎𝐍𝐘𝐌𝐎𝐔𝐒 𝐂𝐇𝐀𝐓 💳 」
 ╠${prefix}anonymous
 ╠${prefix}start
 ╠${prefix}next
 ╠${prefix}leave
-╠══════✪「 𝐓𝐎𝐎𝐋𝐒 」
+╠══════✪「 𝐓𝐎𝐎𝐋𝐒 💳 」
 ╠ ${prefix}translate [text]
 ╠ ${prefix}fliptext [text]
 ╠ ${prefix}toletter [number]
-╠══════✪「 𝐃𝐀𝐓𝐀𝐁𝐀𝐒𝐄 」
+╠══════✪「 𝐃𝐀𝐓𝐀𝐁𝐀𝐒𝐄 💳 」
 ╠ ${prefix}setcmd
 ╠ ${prefix}listcmd
 ╠ ${prefix}delcmd
@@ -9631,7 +9631,7 @@ await XeonBotInc.send5ButImg(from, `╔═══════✪「 𝐎𝐖𝐍�
 ╠ ${prefix}listmsg
 ╠ ${prefix}getmsg
 ╠ ${prefix}delmsg
-╠══════✪「 𝐓𝐕 𝐍𝐄𝐖𝐒 」
+╠══════✪「 𝐓𝐕 𝐍𝐄𝐖𝐒 💳 」
 ╠ ${prefix}darkjoke
 ╠ ${prefix}quotes
 ╠ ${prefix}animequotes
@@ -9656,7 +9656,7 @@ await XeonBotInc.send5ButImg(from, `╔═══════✪「 𝐎𝐖𝐍�
 ╠${prefix}covidindo
 ╠${prefix}earthquake
 ╠${prefix}tvschedule
-╠══════✪「 𝐇𝐒𝐂𝐎𝐏𝐄 」
+╠══════✪「 𝐇𝐒𝐂𝐎𝐏𝐄 💳 」
 ╠${prefix}nomorhoki
 ╠${prefix}artimimpi 
 ╠${prefix}artinama 
@@ -9687,7 +9687,7 @@ await XeonBotInc.send5ButImg(from, `╔═══════✪「 𝐎𝐖𝐍�
 ╠${prefix}masasubur
 ╠${prefix}zodiak
 ╠${prefix}shio
-╠══════✪「 𝐎𝐓𝐇𝐄𝐑 」
+╠══════✪「 𝐎𝐓𝐇𝐄𝐑 💳 」
 ╠ ${prefix}afk
 ╠ ${prefix}readmore [text]
 ╠ ${prefix}toviewonce
@@ -9712,7 +9712,7 @@ case 'ownermenu':
 	   if (isBan) return reply(mess.ban)
 	if (isBanChat) return reply(mess.banChat)
 var unicorn = await getBuffer(picak+'Owner Menu')
-await XeonBotInc.send5ButImg(from, `╔═══════✪「 𝐎𝐖𝐍𝐄𝐑 」	
+await XeonBotInc.send5ButImg(from, `╔═══════✪「 𝐎𝐖𝐍𝐄𝐑 💳 」	
 ╠ ${prefix}self
 ╠ ${prefix}public
 ╠ ${prefix}antitag
@@ -9737,7 +9737,7 @@ case 'groupmenu':
 	   if (isBan) return reply(mess.ban)
 	if (isBanChat) return reply(mess.banChat)
 var unicorn = await getBuffer(picak+'Group Menu')
-await XeonBotInc.send5ButImg(from, `╔═══════✪「 𝐆𝐑𝐎𝐔𝐁 」	
+await XeonBotInc.send5ButImg(from, `╔═══════✪「 𝐆𝐑𝐎𝐔𝐁 💳 」	
 ╠${prefix}groupsetting
 ╠${prefix}grouplink
 ╠${prefix}ephemeral 
@@ -9783,7 +9783,7 @@ case 'rpgmenu':
 	   if (isBan) return reply(mess.ban)
 	if (isBanChat) return reply(mess.banChat)
 var unicorn = await getBuffer(picak+'Rpg Menu')
-await XeonBotInc.send5ButImg(from, `╔═══════✪「 𝐑𝐏𝐆 」	
+await XeonBotInc.send5ButImg(from, `╔═══════✪「 𝐑𝐏𝐆 💳 」	
 ╠${prefix}hunt
 ╠${prefix}mine
 ╠${prefix}fish
@@ -9801,7 +9801,7 @@ case 'makermenu':
 	   if (isBan) return reply(mess.ban)
 	if (isBanChat) return reply(mess.banChat)
 var unicorn = await getBuffer(picak+'Maker Menu')
-await XeonBotInc.send5ButImg(from, `╔═══════✪「 𝐌𝐀𝐊𝐄𝐑 」	
+await XeonBotInc.send5ButImg(from, `╔═══════✪「 𝐌𝐀𝐊𝐄𝐑 💳 」	
 ╠${prefix}candy
 ╠${prefix}8bit
 ╠${prefix}horror
@@ -9915,7 +9915,7 @@ case 'downloadmenu':
 	   if (isBan) return reply(mess.ban)
 	if (isBanChat) return reply(mess.banChat)
 var unicorn = await getBuffer(picak+'Download Menu')
-await XeonBotInc.send5ButImg(from, `╔═══════✪「 𝐃𝐎𝐖𝐍𝐋𝐎𝐀𝐃 」	
+await XeonBotInc.send5ButImg(from, `╔═══════✪「 𝐃𝐎𝐖𝐍𝐋𝐎𝐀𝐃 💳 」	
 ╠${prefix}instagram 
 ╠${prefix}igtv 
 ╠${prefix}igstory [username]
@@ -9942,7 +9942,7 @@ case 'searchmenu':
 	   if (isBan) return reply(mess.ban)
 	if (isBanChat) return reply(mess.banChat)
 var unicorn = await getBuffer(picak+'Search Menu')
-await XeonBotInc.send5ButImg(from, `╔═══════✪「 𝐒𝐄𝐀𝐑𝐂𝐇 」	
+await XeonBotInc.send5ButImg(from, `╔═══════✪「 𝐒𝐄𝐀𝐑𝐂𝐇 💳 」	
 ╠${prefix}play 
 ╠${prefix}song 
 ╠${prefix}yts 
@@ -10276,7 +10276,7 @@ case 'soundmenu':
 	   if (isBan) return reply(mess.ban)
 	if (isBanChat) return reply(mess.banChat)
 var unicorn = await getBuffer(picak+'Sound Menu')
-await XeonBotInc.send5ButImg(from, `╔═══════✪「 𝐒𝐎𝐔𝐍𝐃 」	
+await XeonBotInc.send5ButImg(from, `╔═══════✪「 𝐒𝐎𝐔𝐍𝐃  」	
 ╠ ${prefix}sound1
 ╠ ${prefix}sound2
 ╠ ${prefix}sound3
